@@ -1,0 +1,40 @@
+Bureau of Justice Statistics,,,,,
+Filename: cv22luss1719f01.csv,,,,,
+"Figure 1. Rate of violent victimization per 1,000 persons age 12 or older in the 22 largest states, 2017–19",,,,,
+"Report title: Criminal Victimization in the 22 Largest U.S. States, 2017–2019  NCJ 305402",,,,,
+"Data Source: Bureau of Justice Statistics, National Crime Victimization Survey, Restricted-use data, 2017–2019",,,,,
+"Authors: Grace Kena, MPP, and Rachel E. Morgan, PhD, BJS Statisticians",,,,,
+Refer questions to: askbjs@usdoj.gov 202-307-0765,,,,,
+Date of version: 3/6/2023,,,,,
+ ,,,,,
+"Figure 1. Rate of violent victimization per 1,000 persons age 12 or older in the 22 largest states, 2017–19",,,,,
+,,"Rate per 1,000",,95% confidence interval,
+State,,Estimate,,Lower bound,Upper bound
+,United States*,21.6,,20.42,22.78
+Arizona,,36.8, †,27.03,46.59
+California,,22.4,,18.64,26.18
+Colorado,,45, †,36.21,53.83
+Florida,,13.2, †,10.01,16.35
+Georgia,,11.5, †,7.93,14.97
+Illinois,,19.8,,13.53,26.01
+Indiana,,27.5,,20.16,34.82
+Maryland,,21.1,,14.2,27.9
+Massachusetts,,20.5,,9.94,30.98
+Michigan,,21.1,,15.56,26.56
+Minnesota,,20.8,,17.38,24.22
+Missouri,,21.5,,16.87,26.17
+New Jersey,,7.7, †,5.11,10.35
+New York,,15.7, †,11.25,20.05
+North Carolina,,13.3, †,9.28,17.34
+Ohio,,23.6,,18.97,28.31
+Pennsylvania,,21.8,,16.81,26.87
+Tennessee,,25.4,,18.01,32.85
+Texas,,18.3, ‡,14.69,21.85
+Virginia,,15.4, †,11.78,18.96
+Washington,,36.8, †,28.35,45.19
+Wisconsin,,22.1,,13.76,30.48
+"Note: Violent victimization includes rape or sexual assault, robbery, aggravated assault, and simple assault. Estimates include 95% confidence intervals. The U.S. Census Bureau reviewed this data product for unauthorized disclosure of confidential information and approved the disclosure avoidance practices applied to this release (CBDRB-FY20-307). See appendix table 1 for standard errors. See appendix table 7 for person population estimates.",,,,,
+*Comparison group.,,,,,
+†Difference with comparison group is significant at the 95% confidence level.,,,,,
+‡Difference with comparison group is significant at the 90% confidence level.,,,,,
+"Source: Bureau of Justice Statistics, National Crime Victimization Survey, Restricted-use data, 2017–2019.",,,,,

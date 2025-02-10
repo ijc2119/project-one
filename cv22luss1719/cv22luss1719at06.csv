@@ -1,0 +1,41 @@
+Bureau of Justice Statistics,,,,,,,,,,,,,
+Filename: cv22luss1719at06.csv,,,,,,,,,,,,,
+"Appendix table 6. Estimates and standard errors for figure 6: Percent of property victimizations reported to police in the 22 largest states, 2017–19",,,,,,,,,,,,,
+"Report title: Criminal Victimization in the 22 Largest U.S. States, 2017–2019  NCJ 305402",,,,,,,,,,,,,
+"Data Source: Bureau of Justice Statistics, National Crime Victimization Survey, Restricted-use data, 2017–19",,,,,,,,,,,,,
+"Authors: Grace Kena, MPP, and Rachel E. Morgan, PhD, BJS Statisticians",,,,,,,,,,,,,
+Refer questions to: askbjs@usdoj.gov 202-307-0765,,,,,,,,,,,,,
+Date of version: 3/6/2023,,,,,,,,,,,,,
+ ,,,,,,,,,,,,,
+"Appendix table 6. Estimates and standard errors for figure 6: Percent of property victimizations reported to police in the 22 largest states, 2017–19",,,,,,,,,,,,,
+,,Percent,,,,,95% confidence interval,,,,,Number,
+State,,Estimate,,Standard error/a,,,Lower bound,,Upper bound,,,Estimate,Standard error/a
+,United States*,34.1,%,0.42,%,,33.31,%,34.97,%,,"4,514,000","75,330"
+Arizona,,32,,2.32,,,27.47,,36.55,,,"127,900","12,680"
+California,,31.8, ‡,1.24,,,29.39,,34.27,,,"624,600","31,300"
+Colorado,,32.4,,1.99,,,28.53,,36.33,,,"120,000","10,260"
+Florida,,38.8, †,2.26,,,34.32,,43.18,,,"225,400","22,930"
+Georgia,,39.2, †,2.11,,,35.03,,43.31,,,"112,800","9,300"
+Illinois,,35.8,,2.88,,,30.18,,41.46,,,"141,400","11,520"
+Indiana,,29.7, †,1.67,,,26.46,,33,,,"96,800","8,260"
+Maryland,,28.3, †,2.29,,,23.8,,32.78,,,"66,720","8,050"
+Massachusetts,,31.7,,2.81,,,26.17,,37.19,,,"67,360","7,070"
+Michigan,,41.1, †,2.82,,,35.53,,46.59,,,"123,500","12,450"
+Minnesota,,31.3,,1.93,,,27.49,,35.05,,,"81,080","8,300"
+Missouri,,35.5,,1.54,,,32.43,,38.47,,,"104,600","10,860"
+New Jersey,,39.5, ‡,3.09,,,33.44,,45.54,,,"65,700","8,070"
+New York,,28.5, †,2.01,,,24.55,,32.43,,,"141,400","13,150"
+North Carolina,,43.6, †,2.44,,,38.86,,48.42,,,"112,600","9,060"
+Ohio,,35.1,,2.73,,,29.74,,40.44,,,"153,700","16,810"
+Pennsylvania,,31.4,,2.65,,,26.17,,36.57,,,"124,700","15,580"
+Tennessee,,37.3,,2.44,,,32.47,,42.05,,,"105,500","7,740"
+Texas,,36.3,,1.73,,,32.94,,39.7,,,"431,800","27,210"
+Virginia,,33,,2.44,,,28.26,,37.8,,,"94,470","8,640"
+Washington,,29.9, †,1.55,,,26.82,,32.88,,,"178,800","11,420"
+Wisconsin,,31.9,,2.73,,,26.54,,37.24,,,"57,280","6,410"
+"Note: Property victimization includes burglary or trespassing, motor vehicle theft, and other household theft. The U.S. Census Bureau reviewed this data product for unauthorized disclosure of confidential information and approved the disclosure avoidance practices applied to this release (CBDRB-FY20-307).",,,,,,,,,,,,,
+*Comparison group.,,,,,,,,,,,,,
+†Difference with comparison group is significant at the 95% confidence level.,,,,,,,,,,,,,
+‡Difference with comparison group is significant at the 90% confidence level.,,,,,,,,,,,,,
+a/Standard errors rounded due to disclosure protocols.,,,,,,,,,,,,,
+"Source: Bureau of Justice Statistics, National Crime Victimization Survey, Restricted-use data, 2017–19.",,,,,,,,,,,,,

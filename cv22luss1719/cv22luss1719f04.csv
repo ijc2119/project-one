@@ -1,0 +1,40 @@
+Bureau of Justice Statistics,,,,,
+Filename: cv22luss1719f04.csv,,,,,
+"Figure 4. Rate of household burglary victimization per 1,000 households in the 22 largest states, 2017–19",,,,,
+"Report title: Criminal Victimization in the 22 Largest U.S. States, 2017–2019  NCJ 305402",,,,,
+"Data Source: Bureau of Justice Statistics, National Crime Victimization Survey, Restricted-use data, 2017–19",,,,,
+"Authors: Grace Kena, MPP, and Rachel E. Morgan, PhD, BJS Statisticians",,,,,
+Refer questions to: askbjs@usdoj.gov 202-307-0765,,,,,
+Date of version: 3/6/2023,,,,,
+ ,,,,,
+"Figure 4. Rate of household burglary victimization per 1,000 households in the 22 largest states, 2017–19",,,,,
+,,"Rate per 1,000",,95% confidence interval,
+State,,Estimate,,Lower bound,Upper bound
+,United States*,19.7,,18.68,20.62
+Arizona,,28.5, †,23.46,33.6
+California,,19.9,,16.78,23
+Colorado,,25.3,,15.11,35.55
+Florida,,14.9, †,10.28,19.44
+Georgia,,17.8,,12.5,23.16
+Illinois,,17.4,,13.74,21.1
+Indiana,,25, †,20.26,29.8
+Maryland,,15.5, ‡,11,20.02
+Massachusetts,,12.2, †,8.34,16.06
+Michigan,,17.9,,13.17,22.69
+Minnesota,,19.5,,15.71,23.29
+Missouri,,24.8,,16.32,33.26
+New Jersey,,12.9, †,9.07,16.79
+New York,,9.4, †,7.15,11.69
+North Carolina,,15.8, †,12.43,19.07
+Ohio,,19.4,,13.95,24.85
+Pennsylvania,,14.3, †,9.85,18.77
+Tennessee,,23.9, ‡,19.62,28.2
+Texas,,21.3,,16.99,25.59
+Virginia,,15, †,11.4,18.66
+Washington,,30.3, †,23.81,36.79
+Wisconsin,,18.2,,14.1,22.32
+"Note: Burglary is the unlawful or forcible entry or attempted entry of places, including a permanent residence, other residence (e.g., a hotel room or vacation residence), or other structure (e.g., a garage or shed) where there was a completed or attempted theft. Estimates include 95% confidence intervals. The U.S. Census Bureau reviewed this data product for unauthorized disclosure of confidential information and approved the disclosure avoidance practices applied to this release (CBDRB-FY20-307). See appendix table 4 for standard errors. See appendix table 8 for household population estimates.",,,,,
+*Comparison group.,,,,,
+†Difference with comparison group is significant at the 95% confidence level.,,,,,
+‡Difference with comparison group is significant at the 90% confidence level.,,,,,
+"Source: Bureau of Justice Statistics, National Crime Victimization Survey, Restricted-use data, 2017–19.",,,,,

@@ -1,0 +1,41 @@
+Bureau of Justice Statistics,,,,,,,,,,
+Filename: cv22luss1719at04.csv,,,,,,,,,,
+"Appendix table 4. Estimates and standard errors for figure 4: Rate of household burglary victimization per 1,000 households in the 22 largest states, 2017–19",,,,,,,,,,
+"Report title: Criminal Victimization in the 22 Largest U.S. States, 2017–2019  NCJ 305402",,,,,,,,,,
+"Data Source: Bureau of Justice Statistics, National Crime Victimization Survey, Restricted-use data, 2017–19",,,,,,,,,,
+"Authors: Grace Kena, MPP, and Rachel E. Morgan, PhD, BJS Statisticians",,,,,,,,,,
+Refer questions to: askbjs@usdoj.gov 202-307-0765,,,,,,,,,,
+Date of version: 3/6/2023,,,,,,,,,,
+ ,,,,,,,,,,
+"Appendix table 4. Estimates and standard errors for figure 4: Rate of household burglary victimization per 1,000 households in the 22 largest states, 2017–19",,,,,,,,,,
+,,"Rate per 1,000",,,,95% confidence interval,,,Number,
+State,,Estimate,,Standard error/a,,Lower bound,Upper bound,,Estimate,Standard error/a
+,United States*,19.7,,0.5,,18.68,20.62,,"2,452,000","61,590"
+Arizona,,28.5, †,2.59,,23.46,33.6,,"75,300","6,740"
+California,,19.9,,1.59,,16.78,23,,"267,400","21,620"
+Colorado,,25.3,,5.22,,15.11,35.55,,"58,120","11,770"
+Florida,,14.9, †,2.34,,10.28,19.44,,"120,400","19,000"
+Georgia,,17.8,,2.72,,12.5,23.16,,"70,930","10,830"
+Illinois,,17.4,,1.88,,13.74,21.1,,"86,630","9,180"
+Indiana,,25, †,2.44,,20.26,29.8,,"67,300","6,270"
+Maryland,,15.5, ‡,2.3,,11,20.02,,"33,310","6,540"
+Massachusetts,,12.2, †,1.97,,8.34,16.06,,"33,230","5,430"
+Michigan,,17.9,,2.43,,13.17,22.69,,"72,580","9,380"
+Minnesota,,19.5,,1.93,,15.71,23.29,,"44,350","4,570"
+Missouri,,24.8,,4.32,,16.32,33.26,,"62,180","10,810"
+New Jersey,,12.9, †,1.97,,9.07,16.79,,"41,790","6,360"
+New York,,9.4, †,1.16,,7.15,11.69,,"72,130","9,010"
+North Carolina,,15.8, †,1.69,,12.43,19.07,,"63,980","7,050"
+Ohio,,19.4,,2.78,,13.95,24.85,,"92,520","12,750"
+Pennsylvania,,14.3, †,2.28,,9.85,18.77,,"70,670","11,970"
+Tennessee,,23.9, ‡,2.19,,19.62,28.2,,"64,800","6,270"
+Texas,,21.3,,2.19,,16.99,25.59,,"215,900","22,670"
+Virginia,,15, †,1.85,,11.4,18.66,,"49,400","5,970"
+Washington,,30.3, †,3.31,,23.81,36.79,,"89,610","9,860"
+Wisconsin,,18.2,,2.1,,14.1,22.32,,"44,250","5,220"
+"Note: Burglary is the unlawful or forcible entry or attempted entry of a place, including a permanent residence, other residence (e.g., a hotel room or vacation residence), or other structure (e.g., a garage or shed) where there was a completed or attempted theft. The U.S. Census Bureau reviewed this data product for unauthorized disclosure of confidential information and approved the disclosure avoidance practices applied to this release (CBDRB-FY20-307). ",,,,,,,,,,
+*Comparison group.,,,,,,,,,,
+†Difference with comparison group is significant at the 95% confidence level.,,,,,,,,,,
+‡Difference with comparison group is significant at the 90% confidence level.,,,,,,,,,,
+a/Standard errors rounded due to disclosure protocols.,,,,,,,,,,
+"Source: Bureau of Justice Statistics, National Crime Victimization Survey, Restricted-use data, 2017–19.",,,,,,,,,,

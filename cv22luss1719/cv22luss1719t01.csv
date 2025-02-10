@@ -1,0 +1,39 @@
+Bureau of Justice Statistics,,,
+Filename: cv22luss1719t01.csv,,,
+"Table 1. NCVS household coverage ratios, by state, 2017–19",,,
+"Report title: Criminal Victimization in the 22 Largest U.S. States, 2017–2019  NCJ 305402",,,
+"Data Source: U.S. Census Bureau, National Crime Victimization Survey, Internal data, 2017–19",,,
+"Authors: Grace Kena, MPP, and Rachel E. Morgan, PhD, BJS Statisticians",,,
+Refer questions to: askbjs@usdoj.gov 202-307-0765,,,
+Date of version: 3/6/2023,,,
+ ,,,
+"Table 1. NCVS household coverage ratios, by state, 2017–19",,,
+,,Coverage ratio,
+State,,Intermediate weight/a,Final weight/b
+,United States,0.97,1.01
+Arizona,,0.95,1.01
+California,,0.98,1.02
+Colorado,,0.97,1.04
+Florida,,0.94,1.03
+Georgia,,0.99,1.03
+Illinois,,0.98,1.02
+Indiana,,0.98,1.01
+Maryland,,0.99,0.96
+Massachusetts,,0.98,1.01
+Michigan,,0.97,1.01
+Minnesota,,0.98,1.01
+Missouri,,0.96,1.02
+New Jersey,,0.97,0.97
+New York,,0.97,1.02
+North Carolina,,0.95,1
+Ohio,,0.98,1
+Pennsylvania,,0.97,0.96
+Tennessee,,0.98,1.03
+Texas,,0.99,1.03
+Virginia,,0.98,1.01
+Washington,,0.97,1.01
+Wisconsin,,0.98,0.99
+Note: Coverage ratios were calculated by taking the sum of the intermediate or final weights over the 3-year period from 2017 to 2019. This sum was divided by the total number of occupied housing units from the 2018 American Community Survey 1-year estimates. The U.S. Census Bureau reviewed this data product for unauthorized disclosure of confidential information and approved the disclosure avoidance practices applied to this release (CBDRB-FY20-307). ,,,
+a/Intermediate weights are sampling base weights adjusted for nonresponse but not adjusted to match independent population totals.,,,
+b/Final weights are adjusted to independent population totals. ,,,
+"Source: U.S. Census Bureau, National Crime Victimization Survey, Internal data, 2017–19.",,,

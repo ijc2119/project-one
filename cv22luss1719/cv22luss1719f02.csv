@@ -1,0 +1,39 @@
+Bureau of Justice Statistics,,,,,
+Filename: cv22luss1719f02.csv,,,,,
+"Figure 2. Rate of property victimization per 1,000 households in the 22 largest states, 2017–19",,,,,
+"Report title: Criminal Victimization in the 22 Largest U.S. States, 2017–2019  NCJ 305402",,,,,
+"Data Source: Bureau of Justice Statistics, National Crime Victimization Survey, Restricted-use data, 2017–19",,,,,
+"Authors: Grace Kena, MPP, and Rachel E. Morgan, PhD, BJS Statisticians",,,,,
+Refer questions to: askbjs@usdoj.gov 202-307-0765,,,,,
+Date of version: 3/6/2023,,,,,
+ ,,,,,
+"Figure 2. Rate of property victimization per 1,000 households in the 22 largest states, 2017–19",,,,,
+,,"Rate per 1,000",,95% confidence interval,
+State,,Estimate,,Lower bound,Upper bound
+,United States*,105.9,,103.3,108.5
+Arizona,,151.5, †,134.84,168.16
+California,,145.9, †,132.41,159.39
+Colorado,,161.3, †,145.01,177.59
+Florida,,71.7, †,63.32,80.16
+Georgia,,72.4, †,61.29,83.43
+Illinois,,79.4, †,68.41,90.43
+Indiana,,121.1, †,108.49,133.71
+Maryland,,109.8,,96.82,122.78
+Massachusetts,,78.1, †,68.5,87.66
+Michigan,,74.3, †,64.28,84.38
+Minnesota,,114,,98.29,129.71
+Missouri,,117.6,,94.59,140.61
+New Jersey,,51.5, †,43.37,59.59
+New York,,64.8, †,56.13,73.53
+North Carolina,,63.5, † ,54.74,72.24
+Ohio,,91.8, †,80.84,102.84
+Pennsylvania,,80.5, †,71.72,89.22
+Tennessee,,104.5,,91.41,117.59
+Texas,,117.3, †,107.26,127.34
+Virginia,,87, †,75.96,98.1
+Washington,,202.5, †,183.59,221.41
+Wisconsin,,73.9, †,65.21,82.59
+"Note: Property crime includes burglary or trespassing, motor vehicle theft, and other household theft. Estimates include 95% confidence intervals. The U.S. Census Bureau reviewed this data product for unauthorized disclosure of confidential information and approved the disclosure avoidance practices applied to this release (CBDRB-FY20-307). See appendix table 2 for standard errors. See appendix table 8 for household population estimates.",,,,,
+*Comparison group.,,,,,
+†Difference with comparison group is significant at the 95% confidence level.,,,,,
+"Source: Bureau of Justice Statistics, National Crime Victimization Survey, Restricted-use data, 2017–2019.",,,,,
