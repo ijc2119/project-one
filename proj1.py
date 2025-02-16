@@ -102,7 +102,7 @@ for i in range(5):
     name= '90%CIsig' + h[i]
     name2 = '95%CIsig' + h[i]
 
-    df2[name] = ((df2[orig] =='‡' or df2[orig] == '†'))
+    df2[name] = ((df2[orig] =='‡') | (df2[orig] == '†'))
     df2[name2] = (df2[orig] == '†')
 
 #change types of df2
@@ -125,9 +125,8 @@ df2 = df2[['', 'rateViolPerThousand', '90%CIsigViolPerThousand', '95%CIsigViolPe
        'UBBurglaryPerThousand', 'ratePercentViolReported',
        '90%CIsigPercentViolReported', '95%CIsigPercentViolReported', 'LBPercentViolReported', 'UBPercentViolReported',]]
 df2=df2.add_prefix("state")
-print(df2.dtypes)
+print(df2.dtypes.value_counts())
 print(df2.columns)
-
 
 
 # merge cities and communities+crime
@@ -136,7 +135,7 @@ print(merge1.head())
 
 final = pd.merge(merge1,df2, how = 'left', left_on = 'state_name', right_on = 'state')
 print(final.head())
-final = final.drop(['state'], axis=1) # removing redundant state column
+final = final.drop(['state', 'city', 'state_name'], axis=1) # removing redundant state column
 final.to_csv('final_data.csv')
 
 #number missing
