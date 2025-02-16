@@ -8,7 +8,7 @@ headers = pd.read_csv("comm_crime_headers.csv",sep=',',engine='python', names = 
 
 headers['ID'] = [row.split(' ')[0] for row in headers['ID']]
 headers = headers.drop(['attribute'], axis=1)
-# print(headers.head())
+print(headers.head())
 
 
 #import communities and crime dataset and add headers
@@ -38,14 +38,15 @@ df['communityname'] = df['communityname'].str.replace('borough', ' borough')
 df["communityName"] = np.vectorize(lambda x : x.split(" ")[0])(np.array(df["communityname"],dtype=str))
 df.loc[df['communityName'] =='nan'] = np.nan
 
-#reorder columns to have communityName at start
-cols = df.columns.tolist()
-cols = cols[-1:] + cols[:-1]
-df = df[cols]
 
 #add space before capital letters in communityName
 df['communityName'] = df['communityName'].replace(to_replace="(\w)([A-Z])", value=r"\1 \2", regex=True)
 print(df.tail())
+
+#reorder columns to have communityName at start
+cols = df.columns.tolist()
+cols = cols[-1:] + cols[:-1]
+df = df[cols]
 
 #change column types
 df = df.astype({'communityname':'str','State':'str', 'nonViolPerPop':'float', 'communityName':'str'})
@@ -58,13 +59,12 @@ df = df.drop_duplicates()
 print(f"Removed {initial_shape[0] - df.shape[0]} duplicate rows. New shape: {df.shape}")
 
 
-#merge with cities
+#prepare cities csv
 cities = pd.read_csv('uscities.csv')
 #drop extra columns
 cities = cities.drop(['city_ascii', 'county_fips','state_id','source','timezone','ranking','timezone','zips','id'], axis=1)
 print(cities.head())
 print(cities.dtypes)
-
 
 
 
@@ -102,7 +102,7 @@ for i in range(5):
     name= '90%CIsig' + h[i]
     name2 = '95%CIsig' + h[i]
 
-    df2[name] = (df2[orig] =='‡')
+    df2[name] = ((df2[orig] =='‡' or df2[orig] == '†'))
     df2[name2] = (df2[orig] == '†')
 
 #change types of df2
