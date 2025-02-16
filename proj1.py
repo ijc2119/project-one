@@ -136,6 +136,7 @@ print(merge1.head())
 
 final = pd.merge(merge1,df2, how = 'left', left_on = 'state_name', right_on = 'state')
 print(final.head())
+final = final.drop(['state'], axis=1) # removing redundant state column
 final.to_csv('final_data.csv')
 
 #number missing
