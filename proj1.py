@@ -136,6 +136,7 @@ print(merge1.head())
 final = pd.merge(merge1,df2, how = 'left', left_on = 'state_name', right_on = 'state')
 print(final.head())
 final = final.drop(['state', 'city', 'state_name'], axis=1) # removing redundant state column
+final = final.replace(r'^\s*$', np.nan, regex=True) # replace empty cells with NaN for consistency
 final.to_csv('final_data.csv')
 
 #number missing
