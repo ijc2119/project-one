@@ -29,10 +29,11 @@ df['nonViolPerPop'] = df['nonViolPerPop'].str.replace('"', '')
 
 
 # separate community type from community name
-df['communityname'] = df['communityname'].str.replace('city', ' city')
-df['communityname'] = df['communityname'].str.replace('town', ' town') #for town and township
-df['communityname'] = df['communityname'].str.replace('village', ' village')
-df['communityname'] = df['communityname'].str.replace('borough', ' borough')
+df['communityname'] = df['communityname'].str.replace('city$', ' city', regex=True)
+df['communityname'] = df['communityname'].str.replace('town$', ' town', regex=True)
+df['communityname'] = df['communityname'].str.replace('township$', ' township', regex=True)
+df['communityname'] = df['communityname'].str.replace('village$', ' village', regex=True)
+df['communityname'] = df['communityname'].str.replace('borough$', ' borough', regex=True)
 
 
 df["communityName"] = np.vectorize(lambda x : x.split(" ")[0])(np.array(df["communityname"],dtype=str))
