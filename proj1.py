@@ -48,10 +48,12 @@ cols = df.columns.tolist()
 cols = cols[-1:] + cols[:-1]
 df = df[cols]
 
-df = df.drop(['communityname'], axis=1)
+df['communityname'] = df['communityname'].str.split().str[1:].str.join(' ')
+df = df.rename(columns={'communityname':'communityType'})
+print(df.head())
 
 #change column types
-df = df.astype({'State':'str', 'nonViolPerPop':'float', 'communityName':'str'})
+df = df.astype({'nonViolPerPop':'float'})
 print(df.dtypes.value_counts())
 
 
@@ -140,7 +142,6 @@ print(final.head())
 
 final = final.drop(['state', 'city', 'state_name', 'state_id'], axis=1) # removing redundant state column
 final.to_csv('final_data.csv')
-
 
 
 #number missing
