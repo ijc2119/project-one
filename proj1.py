@@ -142,6 +142,7 @@ final = final.drop(['state', 'city', 'state_name', 'state_id'], axis=1) # removi
 final.to_csv('final_data.csv')
 
 
+
 #number missing
 print(final.isna().sum())
 
