@@ -2,9 +2,9 @@ import pandas as pd
 import numpy as np
 
 #get headers for communities and crime dataset
-headers = pd.read_fwf('comm_crime_headers.txt')
-headers.to_csv('comm_crime_headers.csv')
-headers = pd.read_csv("comm_crime_headers.csv",sep=',',engine='python', names = ['attribute', 'ID'])
+headers = pd.read_fwf('data/comm_crime_headers.txt')
+headers.to_csv('data/comm_crime_headers.csv')
+headers = pd.read_csv("data/comm_crime_headers.csv",sep=',',engine='python', names = ['attribute', 'ID'])
 
 headers['ID'] = [row.split(' ')[0] for row in headers['ID']]
 headers = headers.drop(['attribute'], axis=1)
@@ -12,9 +12,9 @@ print(headers.head())
 
 
 #import communities and crime dataset and add headers
-df = pd.read_fwf('CommViolPredUnnormalizedData.txt')
-df.to_csv('comm_crime.csv')
-df = pd.read_csv('comm_crime.csv',sep='\s*,\s*',engine='python',na_values=['?'])
+df = pd.read_fwf('data/CommViolPredUnnormalizedData.txt')
+df.to_csv('data/comm_crime.csv')
+df = pd.read_csv('data/comm_crime.csv',sep='\s*,\s*',engine='python',na_values=['?'])
 df = df.drop(df.columns[0], axis=1)
 df.columns = headers['ID']
 
@@ -64,7 +64,7 @@ print(f"Removed {initial_shape[0] - df.shape[0]} duplicate rows. New shape: {df.
 
 
 #prepare cities csv
-cities = pd.read_csv('uscities.csv')
+cities = pd.read_csv('data/uscities.csv')
 #drop extra columns
 cities = cities.drop(['city_ascii', 'county_fips','source','timezone','ranking','timezone','zips','id'], axis=1)
 print(cities.head())
@@ -74,7 +74,7 @@ print(cities.dtypes)
 
 ### prepare top 22 states dataframe
 h = ['violPerThousand', 'propertyPerThousand','','burglaryPerThousand', 'percentViolReported', 'percentPropReported']
-files = ['cv22luss1719/cv22luss1719f01.csv', 'cv22luss1719/cv22luss1719f02.csv', 'cv22luss1719/cv22luss1719f03.csv', 'cv22luss1719/cv22luss1719f04.csv', 'cv22luss1719/cv22luss1719f05.csv']
+files = ['data/cv22luss1719/cv22luss1719f01.csv', 'data/cv22luss1719/cv22luss1719f02.csv', 'data/cv22luss1719/cv22luss1719f03.csv', 'data/cv22luss1719/cv22luss1719f04.csv', 'data/cv22luss1719/cv22luss1719f05.csv']
 
 df2 = pd.DataFrame()
 for f in files:
@@ -137,15 +137,15 @@ print(cities.columns)
 merge1 = pd.merge(df, cities, how= 'left', left_on=['communityName','State'], right_on=['city', 'state_id'])
 print(merge1.head())
 
-final = pd.merge(merge1,df2, how = 'left', left_on = 'state_name', right_on = 'state')
-print(final.head())
+dataset = pd.merge(merge1,df2, how = 'left', left_on = 'state_name', right_on = 'state')
+print(dataset.head())
 
-final = final.drop(['state', 'city', 'state_name', 'state_id'], axis=1) # removing redundant state column
-final.to_csv('final_data.csv')
+dataset = dataset.drop(['state', 'city', 'state_name', 'state_id'], axis=1) # removing redundant state column
+dataset.to_csv('dataset.csv')
 
 
 #number missing
-print(final.isna().sum())
+print(dataset.isna().sum())
 
 
 # Data Sources
@@ -160,3 +160,4 @@ print(final.isna().sum())
 # https://stackoverflow.com/questions/56479689/how-do-i-insert-space-before-capital-letter-if-and-only-if-previous-letter-is-no
 # https://stackoverflow.com/a/13148611
 # https://www.w3schools.com/python/pandas/ref_df_add_prefix.asp#:~:text=The%20add_prefix()%20method%20inserts,use%20the%20add_suffix()%20method.
+# https://stackoverflow.com/a/72745031
