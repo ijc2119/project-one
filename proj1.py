@@ -43,13 +43,15 @@ df.loc[df['communityName'] =='nan'] = np.nan
 df['communityName'] = df['communityName'].replace(to_replace="(\w)([A-Z])", value=r"\1 \2", regex=True)
 print(df.tail())
 
-#reorder columns to have communityName at start
+#reorder columns to have communityName at start and remove communityname
 cols = df.columns.tolist()
 cols = cols[-1:] + cols[:-1]
 df = df[cols]
 
+df = df.drop(['communityname'], axis=1)
+
 #change column types
-df = df.astype({'communityname':'str','State':'str', 'nonViolPerPop':'float', 'communityName':'str'})
+df = df.astype({'State':'str', 'nonViolPerPop':'float', 'communityName':'str'})
 print(df.dtypes.value_counts())
 
 
@@ -62,7 +64,7 @@ print(f"Removed {initial_shape[0] - df.shape[0]} duplicate rows. New shape: {df.
 #prepare cities csv
 cities = pd.read_csv('uscities.csv')
 #drop extra columns
-cities = cities.drop(['city_ascii', 'county_fips','state_id','source','timezone','ranking','timezone','zips','id'], axis=1)
+cities = cities.drop(['city_ascii', 'county_fips','source','timezone','ranking','timezone','zips','id'], axis=1)
 print(cities.head())
 print(cities.dtypes)
 
@@ -128,21 +130,19 @@ df2=df2.add_prefix("state")
 print(df2.dtypes.value_counts())
 print(df2.columns)
 
-
+print(cities.columns)
 # merge cities and communities+crime
-merge1 = pd.merge(df, cities, how= 'left', left_on='communityName', right_on='city')
+merge1 = pd.merge(df, cities, how= 'left', left_on=['communityName','State'], right_on=['city', 'state_id'])
 print(merge1.head())
 
 final = pd.merge(merge1,df2, how = 'left', left_on = 'state_name', right_on = 'state')
 print(final.head())
-final = final.drop(['state', 'city', 'state_name'], axis=1) # removing redundant state column
-final = final.replace(r'^\s*$', np.nan, regex=True) # replace empty cells with NaN for consistency
+
+final = final.drop(['state', 'city', 'state_name', 'state_id'], axis=1) # removing redundant state column
 final.to_csv('final_data.csv')
 
 #number missing
 print(final.isna().sum())
-
-
 
 
 # Data Sources
@@ -157,4 +157,3 @@ print(final.isna().sum())
 # https://stackoverflow.com/questions/56479689/how-do-i-insert-space-before-capital-letter-if-and-only-if-previous-letter-is-no
 # https://stackoverflow.com/a/13148611
 # https://www.w3schools.com/python/pandas/ref_df_add_prefix.asp#:~:text=The%20add_prefix()%20method%20inserts,use%20the%20add_suffix()%20method.
-
