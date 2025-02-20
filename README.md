@@ -52,7 +52,7 @@ To run this project, ensure you have the following installed:
 - `dataset.csv` → Merged dataset
 - `images` → Folder containing PNG files of some figures 
 - `final_data_cleaned.csv` → Cleaned dataset after preprocessing
-- `Crime_Rate_Analysis_Report_Team_8.ipynb` → Final Report 
+- `Crime_Rate_Analysis_Report_Team_8_Final_Version.ipynb` → Final Report 
 - `README.md` → Project documentation
 
 ## Contributors
