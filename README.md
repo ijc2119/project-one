@@ -36,12 +36,9 @@ To run this project, ensure you have the following installed:
    ```
 
 ## Usage Instructions
-- Run `proj1.py` for data cleaning and preprocessing:
-  ```sh
-  python proj1.py
-  ```
 - Open `proj1_data.ipynb` to explore data processing and analysis.
 - The final cleaned dataset is saved as `final_data_cleaned.csv`.
+- Open `Crime_Rate_Analysis_Report_Team_8.ipynb` to see final report Jupyter Notebook 
 
 ## Project Workflow
 1. **Data Cleaning**: Formatting and merging datasets.
@@ -50,10 +47,12 @@ To run this project, ensure you have the following installed:
 4. **Crime Rate Insights**: Identifying key socioeconomic and law enforcement correlations.
 
 ## File Structure
-- `proj1.py` → Data cleaning and preparation
-- `proj1_data.ipynb` → Data analysis and report draft
+- `proj1_code.ipynb` → Data analysis and report draft
+- `data` → Folder containing raw datasets 
 - `dataset.csv` → Merged dataset
+- `images` → Folder containing PNG files of some figures 
 - `final_data_cleaned.csv` → Cleaned dataset after preprocessing
+- `Crime_Rate_Analysis_Report_Team_8.ipynb` → Final Report 
 - `README.md` → Project documentation
 
 ## Contributors
